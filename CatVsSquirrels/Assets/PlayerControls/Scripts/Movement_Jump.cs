@@ -9,6 +9,8 @@ public class Movement_Jump : MonoBehaviour
     [SerializeField] private GameObject groundChecker;
 
     [SerializeField] private IInput input;
+
+    public SimpleAudioEvent jumpSFX;
     
     public float jumpSensitivity = 1f;
     private bool _isGrounded = false;
@@ -21,6 +23,8 @@ public class Movement_Jump : MonoBehaviour
         if (input.jumpInput && checkIsGrounded())
         {
             _rb.AddForce(Vector2.up * jumpSensitivity);
+
+            AudioManager.instance.PlayInWorld(transform.position, jumpSFX);
         }
     }
 
