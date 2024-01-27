@@ -10,6 +10,7 @@ public class Input_Player : IInput
         horizontalInput = Input.GetAxis("Horizontal");
         jumpInput = Input.GetButtonDown("Jump");
         attackInput = Input.GetButtonDown("Fire1");
+        testInput = Input.GetButtonDown("Submit");
     }
     
 }
