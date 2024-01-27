@@ -8,24 +8,24 @@ public class HeartSprites : MonoBehaviour
     [SerializeField] private Sprite fullheart;
     [SerializeField] private Sprite halfheart;
     [SerializeField] private Sprite emptyheart;
-
-    private Sprite origSprite;
+    
+    private Image origSprite;
     private void Start()
     {
-        origSprite = this.gameObject.GetComponent<Image>().sprite;
+        origSprite = this.gameObject.GetComponent<Image>();
     }
     public void showFullHeart()
     {
-        origSprite = fullheart;
+        origSprite.sprite = fullheart;
     }
 
     public void showHalfHeart()
     {
-        origSprite = halfheart;
+        origSprite.sprite = halfheart;
     }
 
     public void showEmptyHeart()
     {
-        origSprite = emptyheart;
+        origSprite.sprite = emptyheart;
     }
 }

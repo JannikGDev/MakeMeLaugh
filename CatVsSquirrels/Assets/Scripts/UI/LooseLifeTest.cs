@@ -8,6 +8,8 @@ using UnityEngine;
 public class LooseLifeTest : MonoBehaviour
 {
     [SerializeField] private IInput input;
+    [SerializeField] private GameObject healtComponent;
+    public GameObject heart;
     private void Update()
     {
         bool testButton = input.testInput;
@@ -19,7 +21,7 @@ public class LooseLifeTest : MonoBehaviour
 
     private void SubstractLife()
     {
-        GameManagerHealth.Instance.health--;
-        Debug.Log("Life: " + GameManagerHealth.Instance.health);
+        healtComponent.GetComponent<HealthComponent>().TakeDamage(1);
+        Debug.Log("Life: " + healtComponent.GetComponent<HealthComponent>().health);
     }
 }
