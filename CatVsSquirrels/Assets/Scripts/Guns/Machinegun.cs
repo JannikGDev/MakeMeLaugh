@@ -14,6 +14,8 @@ public class Machinegun : MonoBehaviour
 
     public GameObject m_projectilePrefab;
 
+    public GameObject m_fireVFX;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,11 +55,15 @@ public class Machinegun : MonoBehaviour
         Quaternion rotationQuaternion = Quaternion.Euler(0, 0, rotationAngleDegrees);
 
         // Rotate the original vector using the quaternion
-        Vector3 rotatedVector = rotationQuaternion * transform.right;
+        Vector3 rotatedVector = rotationQuaternion * transform.parent.TransformVector(Vector3.right);
 
         GameObject newProjectile = Instantiate(m_projectilePrefab, m_shotPos.position, Quaternion.identity);
         var aProjectile = newProjectile.GetComponent<AProjectile>();
 
         aProjectile.Init(rotatedVector * m_shotForce);
+
+        transform.right = rotatedVector;
+
+        GameObject fireVFX = Instantiate(m_fireVFX, m_shotPos.position, Quaternion.LookRotation(transform.right));
     }
 }
