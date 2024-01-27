@@ -1,20 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting.ReorderableList;
+using System;
 using UnityEngine;
 
 public class Movement_Grounded : MonoBehaviour
 {
     public bool isGrounded;
-    [SerializeField] private float rayLength = 1.0f;
-    [SerializeField] private LayerMask groundMask;
+    [SerializeField] private int groundLayer;
 
-    void FixedUpdate()
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        isGrounded = false;
-        if (Physics2D.Raycast(transform.position, Vector3.down, rayLength, groundMask))
+        if (col.gameObject.layer == groundLayer)
         {
             isGrounded = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D col)
+    {
+        if (col.gameObject.layer == groundLayer)
+        {
+            isGrounded = false;
         }
     }
 }
