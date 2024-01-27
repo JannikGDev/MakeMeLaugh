@@ -12,12 +12,12 @@ public class HeartManager : MonoBehaviour
     void Start()
     {
         hearts = GetComponentsInChildren<HeartSprites>();
-
         healthComponent.onDoDamage += OnTakeDamage;
     }
 
     void OnDestroy()
     {
+        // Taking Damage
         healthComponent.onDoDamage -= OnTakeDamage;
     }
 
@@ -27,7 +27,8 @@ public class HeartManager : MonoBehaviour
         Debug.Log("Took Damage");
         int index = newLife / 2;
         int heartvalue = newLife % 2;
-
+        
+        // Takes the heartvalue, which can be half or full
         switch (heartvalue)
         {
             case 1: 
@@ -38,6 +39,14 @@ public class HeartManager : MonoBehaviour
                 hearts[index].showEmptyHeart();
                 Debug.Log("Should show empty heart");
                 break;
+        }
+        
+        // Game Over
+        if (newLife == 0)
+        {
+            //TODO: Add GameOver Screen
+            Time.timeScale = 0;
+            Debug.Log("Game over!");
         }
 
 
