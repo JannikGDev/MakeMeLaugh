@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6637179735760792955}
   - component: {fileID: 3402821831981818185}
   - component: {fileID: 7124165968840080545}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1196348521
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 2140569837, guid: 6fe2e59dd8b92264a9b1a2b89afe6a07, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
