@@ -15,13 +15,21 @@ public class Movement_Horizontal : MonoBehaviour
         if (horizontalInput < 0)
         {
             moveright = false;
-            Debug.Log(moveright);
         }
         else
         {
             moveright = true;
-            Debug.Log(moveright);
         }
         _rb.AddForce(transform.right * horizontalInput * movementSensibility);
+
+        if (horizontalInput == 0)
+        {
+            _rb.velocity = new Vector2(0, 0);
+        }
+
+        if (_rb.velocity.x > 5)
+        {
+            Debug.Log("Velocity over 5");
+        }
     }
 }
