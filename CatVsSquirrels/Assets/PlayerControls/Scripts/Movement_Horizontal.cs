@@ -28,7 +28,7 @@ public class Movement_Horizontal : MonoBehaviour
         }
         _rb.AddForce(transform.right * (horizontalInput * movementSensibility));
 
-        if (Mathf.Abs(horizontalInput) < 0.2f && groundChecker.isGrounded)
+        if (Mathf.Abs(horizontalInput) < 0.1f && groundChecker.isGrounded)
         {
             _rb.velocity = new Vector2(0, _rb.velocity.y);
         }
