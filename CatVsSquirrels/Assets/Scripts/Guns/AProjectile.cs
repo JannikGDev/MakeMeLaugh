@@ -10,6 +10,10 @@ public class AProjectile : MonoBehaviour
     private Rigidbody2D m_body;
 
     private bool collided = false;
+    public bool destroyOnHit = false;
+
+    private bool m_needDestroy = false;
+
 
     void OnEnable()
     {
@@ -19,6 +23,11 @@ public class AProjectile : MonoBehaviour
     public void Init(Vector3 force)
     {
         m_body.AddForce(force);
+    }
+
+    void Update()
+    {
+        if(m_needDestroy) Destroy(gameObject);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -34,5 +43,7 @@ public class AProjectile : MonoBehaviour
 
             var contactVFX = Instantiate(m_vfxPrefab, transform.position, Quaternion.LookRotation(contact.normal));
         }
+
+        if (destroyOnHit) m_needDestroy = true;
     }
 }

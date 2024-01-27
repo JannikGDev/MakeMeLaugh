@@ -290,3 +290,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_vfxPrefab: {fileID: 1337511492845915119, guid: 6e7e9e606583ffb4ab20ce98de1f0e71, type: 3}
+  destroyOnHit: 1

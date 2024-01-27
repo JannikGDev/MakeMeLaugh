@@ -64,6 +64,8 @@ public class Machinegun : MonoBehaviour
 
         transform.right = rotatedVector;
 
-        GameObject fireVFX = Instantiate(m_fireVFX, m_shotPos.position, Quaternion.LookRotation(transform.right));
+        var look = transform.TransformVector(transform.right);
+
+        GameObject fireVFX = Instantiate(m_fireVFX, m_shotPos.position, Quaternion.LookRotation(look));
     }
 }
