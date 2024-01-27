@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class HeartManager : MonoBehaviour
 {
     [SerializeField] private HealthComponent healthComponent;
-    [SerializeField] private HeartSprites [] hearts; 
+    [SerializeField] private HeartSprites [] hearts;
+    [SerializeField] private GameObject restartButton;
 
     // Start is called before the first frame update
     void Start()
@@ -44,11 +45,15 @@ public class HeartManager : MonoBehaviour
         // Game Over
         if (newLife == 0)
         {
-            //TODO: Add GameOver Screen
-            Time.timeScale = 0;
-            Debug.Log("Game over!");
+            GameOver();
         }
+    }
 
-
+    public void GameOver()
+    {
+        //TODO: Add GameOver Screen
+        restartButton.SetActive(true);
+        Time.timeScale = 0;
+        Debug.Log("Game over!");
     }
 }
