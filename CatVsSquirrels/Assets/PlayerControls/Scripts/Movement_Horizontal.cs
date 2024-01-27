@@ -9,6 +9,7 @@ public class Movement_Horizontal : MonoBehaviour
     [SerializeField] private Rigidbody2D _rb;
     [SerializeReference] private IInput input;
     [SerializeField] private Movement_Grounded groundChecker;
+    [SerializeField] private SpriteRenderer sprite;
     
     public bool moveright = true;
     public float velocityLimit = 10.0f;
@@ -28,7 +29,7 @@ public class Movement_Horizontal : MonoBehaviour
             moveright = true;
         }
 
-        _rb.gameObject.transform.localScale = moveright ? new Vector3(1, 1, 1) : new Vector3(-1, 1, 1);
+        sprite.transform.localScale = moveright ? new Vector3(1, 1, 1) : new Vector3(-1, 1, 1);
         
         _rb.AddForce(transform.right * (horizontalInput * movementSensibility));
 

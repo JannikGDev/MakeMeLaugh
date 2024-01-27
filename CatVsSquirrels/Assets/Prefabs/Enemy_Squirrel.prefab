@@ -92,7 +92,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isGrounded: 0
-  groundLayer: 10
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!61 &4354095866039430544
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -512,6 +514,7 @@ MonoBehaviour:
   _rb: {fileID: 7112698969320000151}
   input: {fileID: 8979626381608849655}
   groundChecker: {fileID: 6371603122777478878}
+  sprite: {fileID: 1184896364481240266}
   moveright: 1
   velocityLimit: 10
   movementSensibility: 20
@@ -562,4 +565,5 @@ MonoBehaviour:
   _rb: {fileID: 7112698969320000151}
   groundChecker: {fileID: 3318456855848232796}
   input: {fileID: 8979626381608849655}
+  jumpSFX: {fileID: 0}
   jumpSensitivity: 750

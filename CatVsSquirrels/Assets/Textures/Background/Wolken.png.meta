@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -119,9 +119,400 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Wolken_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1928
+        width: 4
+        height: 777
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e57552dcf11ad74ea385c4622d39bd1
+      internalID: 743104672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolken_1
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 2353
+        width: 606
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8807b5baca87abd4d9f2c48fc3b0108e
+      internalID: -1019738519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolken_2
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 2130
+        width: 673
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44de6fde05bf37d4bbcdadd0de51a1e7
+      internalID: -856634930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolken_3
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 2357
+        width: 545
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9f50edffcb2f414a81ae617ee569958
+      internalID: -1426271030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolken_4
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 1928
+        width: 810
+        height: 777
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fddf140a1844c6d4fa131e23ddfdb296
+      internalID: 2086204828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolken_5
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1606
+        width: 841
+        height: 577
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34fe0d270306f543918e4ac0c09e60e
+      internalID: 116784907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolken_6
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 1626
+        width: 745
+        height: 439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 397f3c459fbcd0a4e93bfdacf618612f
+      internalID: 1789541991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolken_7
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 1431
+        width: 610
+        height: 353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8add736ada66a2d47a39e0cab0fff91f
+      internalID: -2110161659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolken_8
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 1371
+        width: 440
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a86cb084109ad49a7a826e7a74a94d
+      internalID: -908213970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolken_9
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 1214
+        width: 1007
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f9f33e0e2bc1cd4da193793705f068c
+      internalID: -1366830556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolken_10
+      rect:
+        serializedVersion: 2
+        x: 2311
+        y: 1488
+        width: 72
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a5af1dfdb4d1f4bb85f773e1be54cb
+      internalID: 1106114594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolken_11
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1119
+        width: 591
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b8df0a68f4ec647a0205fe058bb7f9
+      internalID: 717704583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolken_12
+      rect:
+        serializedVersion: 2
+        x: 2027
+        y: 1253
+        width: 63
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2afee07c48c23441bc17c3fc3fcfbc0
+      internalID: 1995252236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolken_13
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 1126
+        width: 25
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df76a5de0e384446876f8948e12dddc
+      internalID: -925186219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolken_14
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 734
+        width: 564
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ed20b55d0b9436449d052574541359a
+      internalID: -1499747928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolken_15
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 294
+        width: 733
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24c6490cc1733e4a800fcd206d69430
+      internalID: 956372248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolken_16
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 272
+        width: 748
+        height: 602
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b66f992cb313e7048b8aef44bfc70625
+      internalID: 1048047287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolken_17
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 331
+        width: 510
+        height: 377
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfbd8719516d35c48a8d558954d7db63
+      internalID: 1688070305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +523,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Wolken_0: 743104672
+      Wolken_1: -1019738519
+      Wolken_10: 1106114594
+      Wolken_11: 717704583
+      Wolken_12: 1995252236
+      Wolken_13: -925186219
+      Wolken_14: -1499747928
+      Wolken_15: 956372248
+      Wolken_16: 1048047287
+      Wolken_17: 1688070305
+      Wolken_2: -856634930
+      Wolken_3: -1426271030
+      Wolken_4: 2086204828
+      Wolken_5: 116784907
+      Wolken_6: 1789541991
+      Wolken_7: -2110161659
+      Wolken_8: -908213970
+      Wolken_9: -1366830556
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
