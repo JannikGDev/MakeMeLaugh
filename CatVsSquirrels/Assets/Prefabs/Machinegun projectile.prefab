@@ -289,5 +289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11a46bd285caef347bd951defe5e5c83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 2
   m_vfxPrefab: {fileID: 1337511492845915119, guid: 6e7e9e606583ffb4ab20ce98de1f0e71, type: 3}
+  m_damageStatPrefab: {fileID: 5599693436372671345, guid: c46018a9ecc7a4f4d94c715264218f91, type: 3}
   destroyOnHit: 1

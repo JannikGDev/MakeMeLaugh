@@ -62,8 +62,6 @@ public class Machinegun : MonoBehaviour
 
         aProjectile.Init(rotatedVector * m_shotForce);
 
-        transform.right = rotatedVector;
-
         var look = transform.TransformVector(transform.right);
 
         GameObject fireVFX = Instantiate(m_fireVFX, m_shotPos.position, Quaternion.LookRotation(look));

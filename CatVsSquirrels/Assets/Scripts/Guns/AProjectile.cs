@@ -5,7 +5,10 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class AProjectile : MonoBehaviour
 {
+    public int damage = 2;
+
     public GameObject m_vfxPrefab;
+    public GameObject m_damageStatPrefab;
 
     private Rigidbody2D m_body;
 
@@ -42,7 +45,21 @@ public class AProjectile : MonoBehaviour
             //contact.normal
 
             var contactVFX = Instantiate(m_vfxPrefab, transform.position, Quaternion.LookRotation(contact.normal));
+
+            var healthComponent = collision.collider.GetComponent<HealthComponent>();
+
+            if (healthComponent)
+            {
+                healthComponent.TakeDamage(damage);
+            }
+
+            if (m_damageStatPrefab && healthComponent)
+            {
+                var damageStat = Instantiate(m_damageStatPrefab, collision.collider.transform.position + Vector3.up * 1.5f, Quaternion.identity);
+                damageStat.GetComponent<DamageStat>().Init(damage);
+            }
         }
+        
 
         if (destroyOnHit) m_needDestroy = true;
     }

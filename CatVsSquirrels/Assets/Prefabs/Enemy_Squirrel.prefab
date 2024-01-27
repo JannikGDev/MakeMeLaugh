@@ -244,6 +244,7 @@ GameObject:
   - component: {fileID: 1184896364481240266}
   - component: {fileID: 6159795081032235795}
   - component: {fileID: 7112698969320000151}
+  - component: {fileID: 4834445650922107891}
   m_Layer: 7
   m_Name: Enemy_Squirrel
   m_TagString: Untagged
@@ -387,6 +388,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &4834445650922107891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6897218299494825406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc72c6d5f87b0074dac1527718415dfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
 --- !u!1 &7432578085449886018
 GameObject:
   m_ObjectHideFlags: 0
