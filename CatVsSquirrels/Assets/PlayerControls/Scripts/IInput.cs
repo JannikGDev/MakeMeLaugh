@@ -7,5 +7,6 @@ namespace PlayerControls.Scripts
         public float horizontalInput { get; set; }
         public bool jumpInput { get; set; }
         public bool attackInput { get; set; }
+        public bool testInput { get; set; }
     }
 }
