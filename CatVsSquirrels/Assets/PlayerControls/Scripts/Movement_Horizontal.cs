@@ -37,7 +37,6 @@ public class Movement_Horizontal : MonoBehaviour
         {
             var limitedVelocity = Mathf.Clamp(_rb.velocity.x, -velocityLimit, velocityLimit);
             _rb.velocity = new Vector2(limitedVelocity, _rb.velocity.y);
-            Debug.Log("Velocity over 5");
         }
     }
 }
