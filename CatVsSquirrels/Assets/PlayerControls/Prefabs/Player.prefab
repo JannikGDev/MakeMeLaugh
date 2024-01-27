@@ -1,5 +1,49 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1440634992293587844
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9163927031581533384}
+  - component: {fileID: 5429046491524382688}
+  m_Layer: 0
+  m_Name: Input
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9163927031581533384
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440634992293587844}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5374677860789870239}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5429046491524382688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440634992293587844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e1d43682edf242d7956ac9f44280ca3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1456333272035160285
 GameObject:
   m_ObjectHideFlags: 0
@@ -45,7 +89,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rb: {fileID: 6208969293537942733}
+  input: {fileID: 5429046491524382688}
   moveright: 1
+  velocityLimit: 10
   movementSensibility: 20
 --- !u!1 &1823022785717608463
 GameObject:
@@ -58,7 +104,7 @@ GameObject:
   - component: {fileID: 5374677860789870239}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80,6 +126,7 @@ Transform:
   - {fileID: 765725807938876813}
   - {fileID: 7006041952747300371}
   - {fileID: 2750664326193796747}
+  - {fileID: 9163927031581533384}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2006422813780729789
@@ -129,6 +176,7 @@ MonoBehaviour:
   _projectile: {fileID: 1101515502520058332, guid: 1eb74b898fc7f44338c5c6d7d41bfd49, type: 3}
   _player: {fileID: 4491579162943303918}
   Movement: {fileID: 1456333272035160285}
+  input: {fileID: 5429046491524382688}
   force: 10
 --- !u!1 &4491579162943303918
 GameObject:
@@ -374,4 +422,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rb: {fileID: 6208969293537942733}
   groundChecker: {fileID: 7480923770269039645}
+  input: {fileID: 5429046491524382688}
   jumpSensitivity: 750
