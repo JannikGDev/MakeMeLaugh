@@ -450,6 +450,7 @@ MonoBehaviour:
   _rb: {fileID: 8641429832334471966}
   groundChecker: {fileID: 7480923770269039645}
   input: {fileID: 5429046491524382688}
+  jumpSFX: {fileID: 11400000, guid: c78ba23fd732c04458b18d9abcc8dead, type: 2}
   jumpSensitivity: 750
 --- !u!1001 &8688584182189961146
 PrefabInstance:

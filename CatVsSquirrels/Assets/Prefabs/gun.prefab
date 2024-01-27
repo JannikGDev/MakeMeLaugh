@@ -223,6 +223,7 @@ MonoBehaviour:
   m_shotPos: {fileID: 1288838729764132047}
   m_projectilePrefab: {fileID: 6149830541021882059, guid: 682422d7df3f57742b593719a4773205, type: 3}
   m_fireVFX: {fileID: 3518464979222580778, guid: 7c6f65027cef83540b275d8edb285d1f, type: 3}
+  m_shotSFX: {fileID: 11400000, guid: 17ed3bfd941672c4890d4f262017aa08, type: 2}
 --- !u!1 &8274838301034529982
 GameObject:
   m_ObjectHideFlags: 0

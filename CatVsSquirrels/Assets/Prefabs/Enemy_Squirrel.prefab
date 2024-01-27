@@ -232,6 +232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nutProjectile: {fileID: 3012586009761888380, guid: c3cb24bdbeaa04048a4afe4dc017afcc, type: 3}
   ThrowStrength: 20
+  attackSFX: {fileID: 11400000, guid: daa77ac6dd21df44594f2fedfcc5e1c5, type: 2}
 --- !u!1 &6897218299494825406
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,6 +415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0df5e91a41db3d48a58733578892995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dieSFX: {fileID: 11400000, guid: c7ac211f7f5446240af0b6674f314fdc, type: 2}
 --- !u!1 &7432578085449886018
 GameObject:
   m_ObjectHideFlags: 0

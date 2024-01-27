@@ -7,6 +7,8 @@ public class NutThrower : MonoBehaviour
     [SerializeField] private GameObject nutProjectile;
 
     [SerializeField] private float ThrowStrength = 30;
+
+    [SerializeField] private SimpleAudioEvent attackSFX;
     
     public void ThrowNut(Vector3 direction)
     {
@@ -24,7 +26,8 @@ public class NutThrower : MonoBehaviour
         {
             body.velocity = RotateBy(targetVelocity, -30+angle);
         }
-       
+
+        AudioManager.instance.PlayInWorld(transform.position, attackSFX);
     }
 
     private Vector2 RotateBy(Vector2 input, float angleDegrees)
