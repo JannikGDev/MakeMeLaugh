@@ -23,7 +23,7 @@ public class Movement_Horizontal : MonoBehaviour
         {
             moveright = false;
         }
-        else
+        else if (horizontalInput > 0)
         {
             moveright = true;
         }
