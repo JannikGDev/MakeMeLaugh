@@ -7,11 +7,14 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private GameObject enemyPrefab;
     [SerializeField] private Tilemap grid;
-
+    [SerializeField] private int StartEnemyCount = 10;
+    
     private List<Vector2> spawnPositions = new List<Vector2>();
 
-    private float SpawnDelay = 10f;
+    [SerializeField] [Range(0,0.99f)] private float SpawnDelayDecay = 0.01f;
+    [SerializeField] private float SpawnDelay = 10f;
     private float SpawnCooldown = 0f;
+    private const float minSpawnDelay = 0.5f;
     
     // Start is called before the first frame update
     void Start()
@@ -28,10 +31,11 @@ public class EnemySpawner : MonoBehaviour
                 }
             }
         }
-        
-        SpawnEnemy();
-        SpawnEnemy();
-        SpawnEnemy();
+
+        for (var i = 0; i< StartEnemyCount; i++)
+        {
+            SpawnEnemy();
+        }
     }
 
     void FixedUpdate()
@@ -39,7 +43,8 @@ public class EnemySpawner : MonoBehaviour
         SpawnCooldown -= Time.fixedDeltaTime;
         if (SpawnCooldown <= 0)
         {
-            SpawnDelay *= 0.99f;
+            SpawnDelay *= (1f-SpawnDelayDecay);
+            SpawnDelay = Mathf.Max(minSpawnDelay, SpawnDelay);
             SpawnCooldown = SpawnDelay;
             SpawnEnemy();
         }
