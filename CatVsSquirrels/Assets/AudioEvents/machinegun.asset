@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4c5f1b3dd323c54aab2024ca3ae5894, type: 3}
+  m_Name: machinegun
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 9b14be0f69b5546449c239a681e1d7b8, type: 3}
+  - {fileID: 8300000, guid: 547a89d093c12a24c898afe191c7614a, type: 3}
+  - {fileID: 8300000, guid: b3a3daba623d2c948bd3adcac6d1aef6, type: 3}
+  - {fileID: 8300000, guid: f0ef08a2dcbfe2847b60b361681a4724, type: 3}
+  volume:
+    minValue: 0.8163267
+    maxValue: 1
+  pitch:
+    minValue: 0.8989826
+    maxValue: 1.097705
+  minDelay: 0
+  currentClipLength: 0.36571428

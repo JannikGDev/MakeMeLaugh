@@ -16,6 +16,8 @@ public class Machinegun : MonoBehaviour
 
     public GameObject m_fireVFX;
 
+    public SimpleAudioEvent m_shotSFX;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -65,5 +67,7 @@ public class Machinegun : MonoBehaviour
         var look = transform.TransformVector(transform.right);
 
         GameObject fireVFX = Instantiate(m_fireVFX, m_shotPos.position, Quaternion.LookRotation(look));
+
+        AudioManager.instance.PlayInWorld(transform.position, m_shotSFX);
     }
 }
