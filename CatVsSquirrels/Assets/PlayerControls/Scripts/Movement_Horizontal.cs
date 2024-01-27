@@ -1,9 +1,11 @@
+using PlayerControls.Scripts;
 using UnityEngine;
 
 public class Movement_Horizontal : MonoBehaviour
 {
 
     [SerializeField] private Rigidbody2D _rb;
+    [SerializeReference] private IInput input;
     public bool moveright = true;
 
     public float movementSensibility = 1f;
@@ -11,7 +13,7 @@ public class Movement_Horizontal : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        float horizontalInput = Input.GetAxis("Horizontal");
+        float horizontalInput = input.horizontalInput;
         if (horizontalInput < 0)
         {
             moveright = false;
@@ -20,7 +22,7 @@ public class Movement_Horizontal : MonoBehaviour
         {
             moveright = true;
         }
-        _rb.AddForce(transform.right * horizontalInput * movementSensibility);
+        _rb.AddForce(transform.right * (horizontalInput * movementSensibility));
 
         if (horizontalInput == 0)
         {
@@ -29,6 +31,7 @@ public class Movement_Horizontal : MonoBehaviour
 
         if (_rb.velocity.x > 5)
         {
+            _rb.velocity = new Vector2(5, 0);
             Debug.Log("Velocity over 5");
         }
     }
