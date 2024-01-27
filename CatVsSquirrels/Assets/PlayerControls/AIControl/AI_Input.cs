@@ -17,7 +17,7 @@ public class AI_Input : IInput
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (Player == null)
         {
@@ -28,16 +28,6 @@ public class AI_Input : IInput
         float direction = Player.transform.position.x - this.transform.position.x;
 
         horizontalInput = 0;
-        
-        if (ledgeDetector.EdgeRight)
-        {
-            horizontalInput += -1;
-        }
-        
-        if (ledgeDetector.EdgeLeft)
-        {
-            horizontalInput += 1;
-        }
         
         if (direction > 0)
         {
@@ -51,7 +41,10 @@ public class AI_Input : IInput
             horizontalInput = -1;
         }
 
-        horizontalInput = Mathf.Clamp(horizontalInput,-1, 1);
+        horizontalInput = Mathf.Clamp(
+            horizontalInput,
+            ledgeDetector.EdgeLeft ? 0 : -1, 
+            ledgeDetector.EdgeRight ? 0 : 1);
     }
     
     

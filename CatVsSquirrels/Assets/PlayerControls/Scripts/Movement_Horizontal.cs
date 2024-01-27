@@ -7,6 +7,8 @@ public class Movement_Horizontal : MonoBehaviour
 
     [SerializeField] private Rigidbody2D _rb;
     [SerializeReference] private IInput input;
+    [SerializeField] private Movement_Grounded groundChecker;
+    
     public bool moveright = true;
     public float velocityLimit = 10.0f;
 
@@ -26,14 +28,15 @@ public class Movement_Horizontal : MonoBehaviour
         }
         _rb.AddForce(transform.right * (horizontalInput * movementSensibility));
 
-        if (horizontalInput == 0)
+        if (Mathf.Abs(horizontalInput) < 0.2f && groundChecker.isGrounded)
         {
             _rb.velocity = new Vector2(0, _rb.velocity.y);
         }
 
-        if (_rb.velocity.x > velocityLimit)
+        if (Mathf.Abs(_rb.velocity.x) > velocityLimit)
         {
-            _rb.velocity = new Vector2(velocityLimit, _rb.velocity.y);
+            var limitedVelocity = Mathf.Clamp(_rb.velocity.x, -velocityLimit, velocityLimit);
+            _rb.velocity = new Vector2(limitedVelocity, _rb.velocity.y);
             Debug.Log("Velocity over 5");
         }
     }
