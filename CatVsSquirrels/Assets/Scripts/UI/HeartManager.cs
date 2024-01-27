@@ -24,6 +24,22 @@ public class HeartManager : MonoBehaviour
     // Update is called once per frame
     void OnTakeDamage(int newLife)
     {
-        //TODO: show/hide hearts
+        Debug.Log("Took Damage");
+        int index = newLife / 2;
+        int heartvalue = newLife % 2;
+
+        switch (heartvalue)
+        {
+            case 1: 
+                hearts[index].showHalfHeart();
+                Debug.Log("Should show half heart");
+                break;
+            case 0:
+                hearts[index].showEmptyHeart();
+                Debug.Log("Should show empty heart");
+                break;
+        }
+
+
     }
 }
