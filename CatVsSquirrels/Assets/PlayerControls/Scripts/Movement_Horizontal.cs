@@ -1,4 +1,5 @@
 using PlayerControls.Scripts;
+using Unity.VisualScripting;
 using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEngine;
 
@@ -26,6 +27,9 @@ public class Movement_Horizontal : MonoBehaviour
         {
             moveright = true;
         }
+
+        _rb.gameObject.transform.localScale = moveright ? new Vector3(1, 1, 1) : new Vector3(-1, 1, 1);
+        
         _rb.AddForce(transform.right * (horizontalInput * movementSensibility));
 
         if (Mathf.Abs(horizontalInput) < 0.1f && groundChecker.isGrounded)

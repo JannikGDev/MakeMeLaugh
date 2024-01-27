@@ -11,10 +11,14 @@ public class AI_Input : IInput
 {
     private GameObject Player;
     [SerializeField] private LedgeDetector ledgeDetector;
+    [SerializeField] private NutThrower thrower;
 
-    private float detectionRadius = 5f;
+    private float detectionRadius = 10f;
 
     private bool wanderLeft = false;
+
+    private const float ThrowDelay = 2f;
+    private float throwCooldown = ThrowDelay;
 
     private void Start()
     {
@@ -24,6 +28,8 @@ public class AI_Input : IInput
     // Update is called once per frame
     void FixedUpdate()
     {
+        
+        
         if (Player == null)
         {
             Player = GameObject.FindGameObjectsWithTag("Player").FirstOrDefault();
@@ -38,6 +44,14 @@ public class AI_Input : IInput
         else
         {
             FollowPlayer(diff);
+
+            throwCooldown -= Time.deltaTime;
+            if (throwCooldown <= 0f)
+            {
+                thrower.ThrowNut(diff);
+                throwCooldown = ThrowDelay;
+            }
+            
         }
        
     }
