@@ -7,6 +7,7 @@ using UnityEngine.Tilemaps;
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private GameObject enemyPrefab;
+    [SerializeField] private GameObject bigEnnemyPrefab;
     [SerializeField] private Tilemap grid;
     [SerializeField] private int StartEnemyCount = 10;
     [SerializeField] private int MaxEnemyCount = 100;
@@ -64,12 +65,26 @@ public class EnemySpawner : MonoBehaviour
             return;
         }
         var chosen = Mathf.FloorToInt(Random.value * (spawnPositions.Count-1));
-        var enemy = GameObject.Instantiate(enemyPrefab);
+        var enemy = GameObject.Instantiate(GetEnemyPrefab());
         enemy.transform.position = spawnPositions[chosen];
         Enemies.Add(enemy);
         enemy.GetComponent<HealthComponent>().onDead += () => RemoveEnemy(enemy);
         
         AudioManager.instance.SetIntensity((float)Enemies.Count / MaxEnemyCount);
+    }
+
+    private GameObject GetEnemyPrefab()
+    {
+        var rnd = Random.value;
+
+        if (rnd < 0.1f)
+        {
+            return bigEnnemyPrefab;
+        }
+        else
+        {
+            return enemyPrefab;
+        }
     }
 
     private void RemoveEnemy(GameObject enemy)

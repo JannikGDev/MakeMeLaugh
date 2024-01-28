@@ -45,7 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 6897218299494825406, guid: ca4508d2613db1747960231c58385121, type: 3}
+  bigEnnemyPrefab: {fileID: 6897218299494825406, guid: 8dcf264925d485f43a4bb48409718fd2, type: 3}
   grid: {fileID: 0}
   StartEnemyCount: 0
+  MaxEnemyCount: 100
   SpawnDelayDecay: 0.01
   SpawnDelay: 10

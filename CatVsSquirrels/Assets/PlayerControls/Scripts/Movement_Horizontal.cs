@@ -29,7 +29,8 @@ public class Movement_Horizontal : MonoBehaviour
             moveright = true;
         }
 
-        sprite.transform.localScale = moveright ? new Vector3(1, 1, 1) : new Vector3(-1, 1, 1);
+        var scale = transform.localScale.y;
+        sprite.transform.localScale = moveright ? new Vector3(scale, scale, scale) : new Vector3(-scale, scale, scale);
         
         _rb.AddForce(transform.right * (horizontalInput * movementSensibility));
 

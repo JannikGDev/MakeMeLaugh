@@ -795,7 +795,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -803,6 +803,48 @@ TextureImporter:
       bones: []
       spriteID: f5a042a55e94a6045a41d44e91e4137e
       internalID: 1646253126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: super squirel
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61baba2c8d8af0b40aa1fc6d127887fd
+      internalID: -74653449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squirel attack
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 26
+        height: 33
+      alignment: 9
+      pivot: {x: 0.65618336, y: 0.48339972}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd08df9ca4a8ba84a92eba86f0c0c965
+      internalID: -1628378148
       vertices: []
       indices: 
       edges: []
@@ -849,6 +891,8 @@ TextureImporter:
       box: -1626856777
       fishgranade: 2081419453
       gun: -1027896546
+      squirel attack: -1628378148
+      super squirel: -74653449
       white nut: 1646253126
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
