@@ -11,6 +11,7 @@ public class StartMenuScript : MonoBehaviour
     {
         if (Input.anyKeyDown)
         {
+            AudioManager.instance.EnterScene();
             SceneManager.LoadScene("BuildScene");
         }
     }
