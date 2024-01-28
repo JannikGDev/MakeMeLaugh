@@ -186,4 +186,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_VFXPrefab: {fileID: 986870931829175978, guid: ce8d2c6f322eb9e4c8c6fecaa9d47e79, type: 3}
-  m_SFX: {fileID: 0}
+  m_SFX: {fileID: 11400000, guid: ae848e6be77d1a04d8f2b54409a58b28, type: 2}

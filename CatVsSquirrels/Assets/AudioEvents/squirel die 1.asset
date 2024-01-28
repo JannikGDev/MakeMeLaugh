@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4c5f1b3dd323c54aab2024ca3ae5894, type: 3}
+  m_Name: squirel die 1
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 4031f48346467224b9423eadd9dec26c, type: 3}
+  - {fileID: 8300000, guid: 6f4ce85ff88fda84d8d11b70ba60e0c5, type: 3}
+  - {fileID: 8300000, guid: 23798a7e9be29bd41b45b948bb10ed48, type: 3}
+  - {fileID: 8300000, guid: 9fe1cdded88aa8e429dbc80cf8b89d2a, type: 3}
+  - {fileID: 8300000, guid: 191ba7b10e8996d4a8419684b839f1d5, type: 3}
+  - {fileID: 8300000, guid: 0f4ce1198afd9824886c45ce1b26c774, type: 3}
+  - {fileID: 8300000, guid: 3627f73f1a73ef541b348a2755b72033, type: 3}
+  - {fileID: 8300000, guid: dae0b09aa7e4f3c4bb30a7d8b72cf0db, type: 3}
+  - {fileID: 8300000, guid: a0c99ca5b92d17845892e609151d429d, type: 3}
+  - {fileID: 8300000, guid: 38dba4c4bab51c541986728bcce9b3f6, type: 3}
+  volume:
+    minValue: 0.88435364
+    maxValue: 1
+  pitch:
+    minValue: 1.5918366
+    maxValue: 1.8095236
+  minDelay: 0
+  currentClipLength: 0.83591837
