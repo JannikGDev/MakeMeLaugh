@@ -406,6 +406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
+  m_damageStatPrefab: {fileID: 5599693436372671345, guid: c46018a9ecc7a4f4d94c715264218f91, type: 3}
 --- !u!114 &1085656131748813966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -432,7 +433,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathScore: 50
-  scoreManager: {fileID: 0}
 --- !u!1 &7432578085449886018
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,6 +8,9 @@ public class DestroyOnDead : MonoBehaviour
     HealthComponent healthComponent;
 
     public SimpleAudioEvent dieSFX;
+
+    private bool needDestroy = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,10 +19,15 @@ public class DestroyOnDead : MonoBehaviour
         healthComponent.onDead += OnDie;
     }
 
+    void Update()
+    {
+        if(needDestroy) Destroy(gameObject);
+    }
+
     void OnDie()
     {
-        AudioManager.instance.PlayInWorld(transform.position, dieSFX);
-        
-        Destroy(gameObject);
+        if(dieSFX) AudioManager.instance.PlayInWorld(transform.position, dieSFX);
+
+        needDestroy = true;
     }
 }

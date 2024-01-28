@@ -12,6 +12,8 @@ public class HealthComponent : MonoBehaviour
     public delegate void OnDead();
     public event OnDead onDead;
 
+    public GameObject m_damageStatPrefab;
+
     public void TakeDamage(int damage)
     {
         if(health == 0) return;
@@ -20,7 +22,13 @@ public class HealthComponent : MonoBehaviour
 
         if(health < 0) health = 0;
 
-        if(health == 0) onDead?.Invoke();
+        if (m_damageStatPrefab)
+        {
+            var damageStat = Instantiate(m_damageStatPrefab, transform.position + Vector3.up * 1.5f, Quaternion.identity);
+            damageStat.GetComponent<DamageStat>().Init(damage);
+        }
+
+        if (health == 0) onDead?.Invoke();
 
         onDoDamage?.Invoke(health);
     }
