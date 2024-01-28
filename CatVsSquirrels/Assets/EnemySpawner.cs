@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -8,6 +9,10 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private GameObject enemyPrefab;
     [SerializeField] private Tilemap grid;
     [SerializeField] private int StartEnemyCount = 10;
+    [SerializeField] private int MaxEnemyCount = 100;
+
+
+    private List<GameObject> Enemies = new List<GameObject>();
     
     private List<Vector2> spawnPositions = new List<Vector2>();
 
@@ -21,11 +26,12 @@ public class EnemySpawner : MonoBehaviour
     {
         var bounds = grid.cellBounds;
         for(var x = bounds.min.x; x< bounds.max.x;x++){
-            for(var y= bounds.min.y; y< bounds.max.y;y++){
+            for(var y= bounds.min.y+2; y< bounds.max.y-2;y++){
                 var cellPos = new Vector3Int(x, y, 0);
                 var tile = grid.GetTile(cellPos);
-                var empty = tile == null;
-                if (empty)
+                var tileBelow = grid.GetTile(cellPos + new Vector3Int(0, -1, 0));
+                var tileBelowBelow = grid.GetTile(cellPos + new Vector3Int(0, -2, 0));
+                if (tile == null && tileBelow == null && tileBelowBelow != null)
                 {
                     spawnPositions.Add(grid.CellToWorld(cellPos));
                 }
@@ -53,8 +59,19 @@ public class EnemySpawner : MonoBehaviour
 
     public void SpawnEnemy()
     {
+        if (Enemies.Count >= MaxEnemyCount)
+        {
+            return;
+        }
         var chosen = Mathf.FloorToInt(Random.value * (spawnPositions.Count-1));
         var enemy = GameObject.Instantiate(enemyPrefab);
         enemy.transform.position = spawnPositions[chosen];
+        Enemies.Add(enemy);
+        enemy.GetComponent<HealthComponent>().onDead += () => RemoveEnemy(enemy);
+    }
+
+    private void RemoveEnemy(GameObject enemy)
+    {
+        this.Enemies.Remove(enemy);
     }
 }
