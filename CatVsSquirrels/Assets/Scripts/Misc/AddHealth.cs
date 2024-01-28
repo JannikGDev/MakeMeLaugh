@@ -11,6 +11,7 @@ public class AddHealth : MonoBehaviour
         if (col.gameObject.CompareTag("Player"))
         {
             //Debug.Log("Add Health: " + increaseHealth);
+            col.GetComponent<HealthComponent>().health += increaseHealth;
             HeartManager.Instance.OnAddHealth(increaseHealth);
             Destroy(this.gameObject);
         }
