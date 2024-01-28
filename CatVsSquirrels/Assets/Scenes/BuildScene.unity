@@ -1088,9 +1088,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5374677860789870239, guid: f99485da6e64941e1a6051132de5489e, type: 3}
   m_PrefabInstance: {fileID: 1089178558}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1812991069 stripped
+--- !u!114 &1828973906 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1647770641830861662, guid: f99485da6e64941e1a6051132de5489e, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1337473754677375506, guid: f99485da6e64941e1a6051132de5489e, type: 3}
   m_PrefabInstance: {fileID: 1089178558}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -1258,7 +1258,7 @@ PrefabInstance:
     - target: {fileID: 5196626009109491799, guid: 427e4f9dff2ae42c596390dc197b7ac4, type: 3}
       propertyPath: healthComponent
       value: 
-      objectReference: {fileID: 1812991069}
+      objectReference: {fileID: 1828973906}
     - target: {fileID: 6875548519247397737, guid: 427e4f9dff2ae42c596390dc197b7ac4, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1320,6 +1320,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6414559070610559204, guid: 028511f4705fb8f4582939cc311565ee, type: 3}
+      propertyPath: PlayEvent
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: -6414559070610559204, guid: 028511f4705fb8f4582939cc311565ee, type: 3}
+      propertyPath: StopEvent
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: -6414559070610559204, guid: 028511f4705fb8f4582939cc311565ee, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/MUSIC/Music
+      objectReference: {fileID: 0}
+    - target: {fileID: -6414559070610559204, guid: 028511f4705fb8f4582939cc311565ee, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: -6414559070610559204, guid: 028511f4705fb8f4582939cc311565ee, type: 3}
+      propertyPath: OverrideMinDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6414559070610559204, guid: 028511f4705fb8f4582939cc311565ee, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: 103892100
+      objectReference: {fileID: 0}
+    - target: {fileID: -6414559070610559204, guid: 028511f4705fb8f4582939cc311565ee, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1131531572
+      objectReference: {fileID: 0}
+    - target: {fileID: -6414559070610559204, guid: 028511f4705fb8f4582939cc311565ee, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: 2143868330
+      objectReference: {fileID: 0}
+    - target: {fileID: -6414559070610559204, guid: 028511f4705fb8f4582939cc311565ee, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: -1613621673
+      objectReference: {fileID: 0}
     - target: {fileID: 3103829231925128956, guid: 028511f4705fb8f4582939cc311565ee, type: 3}
       propertyPath: m_ClearFlags
       value: 2
@@ -1372,7 +1408,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -6414559070610559204, guid: 028511f4705fb8f4582939cc311565ee, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
