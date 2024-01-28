@@ -419,6 +419,7 @@ GameObject:
   - component: {fileID: 1085656131748813966}
   - component: {fileID: 3386147804294962647}
   - component: {fileID: 5283116458609834133}
+  - component: {fileID: 8372469534681408195}
   m_Layer: 7
   m_Name: Enemy_Squirrel
   m_TagString: Untagged
@@ -575,6 +576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 5
+  healthLimit: 13
   m_damageStatPrefab: {fileID: 5599693436372671345, guid: c46018a9ecc7a4f4d94c715264218f91, type: 3}
 --- !u!114 &1085656131748813966
 MonoBehaviour:
@@ -623,6 +625,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8372469534681408195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6897218299494825406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a19b10be6706b2444bf17700707f96e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthComponent: {fileID: 4834445650922107891}
+  m_prefab: {fileID: 6349443098916331164, guid: 26c0ecfdb2a55224d836ddfda7a603df, type: 3}
 --- !u!1 &7432578085449886018
 GameObject:
   m_ObjectHideFlags: 0

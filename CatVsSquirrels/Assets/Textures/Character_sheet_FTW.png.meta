@@ -849,6 +849,90 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: squirel head
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 144
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87cd225745992b42b88d8563926e23b
+      internalID: 1196897498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squirel body
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccee2ae1d0bb2aa44b7777ff1003a5f2
+      internalID: 1293029524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big squirel head
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 237
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c0ee204965b294c8ad980b7b2bdec6
+      internalID: 2122661341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: big squirel body
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 224
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12528bbaa86912947bdcbe7775a78fe8
+      internalID: 296741003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -888,10 +972,14 @@ TextureImporter:
       Character_sheet_FTW_8: -297369829
       Character_sheet_FTW_9: 1625519059
       arm: 278935942
+      big squirel body: 296741003
+      big squirel head: 2122661341
       box: -1626856777
       fishgranade: 2081419453
       gun: -1027896546
       squirel attack: -1628378148
+      squirel body: 1293029524
+      squirel head: 1196897498
       super squirel: -74653449
       white nut: 1646253126
   mipmapLimitGroupName: 
