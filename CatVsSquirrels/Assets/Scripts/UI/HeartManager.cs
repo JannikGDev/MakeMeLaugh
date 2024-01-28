@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class HeartManager : MonoBehaviour
 {
+    public static HeartManager Instance;
     [SerializeField] private HealthComponent healthComponent;
     [SerializeField] private HeartSprites [] hearts;
     [SerializeField] private GameObject restartButton;
@@ -12,6 +13,7 @@ public class HeartManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Instance = this;
         hearts = GetComponentsInChildren<HeartSprites>();
         healthComponent.onDoDamage += OnTakeDamage;
     }
@@ -25,7 +27,6 @@ public class HeartManager : MonoBehaviour
     // Update is called once per frame
     void OnTakeDamage(int newLife)
     {
-        Debug.Log("Took Damage");
         int index = newLife / 2;
         int heartvalue = newLife % 2;
         
