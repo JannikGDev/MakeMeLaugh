@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{7e64c8ad-c9cf-4585-ae1d-de4e05f6bce5}">
+		<property name="assetPath">
+			<value>MUSIC/Main/GGJ24-Main-I2-160bpm.ogg</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>87</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{007bec53-578f-415f-bcb7-ef4977d36330}</destination>
+		</relationship>
+	</object>
+</objects>

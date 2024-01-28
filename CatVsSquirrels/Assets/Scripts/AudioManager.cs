@@ -1,17 +1,39 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using FMODUnity;
 using UnityEngine;
+using Object = UnityEngine.Object;
+
 
 public class AudioManager : MonoBehaviour
 {
     public GameObject audioSourcePrefab;
+    private StudioEventEmitter EventEmitter;
 
     public static AudioManager instance;
 
-    // Start is called before the first frame update
-    void Start()
+    
+    
+    private void OnEnable()
     {
-        instance = this;
+        if (AudioManager.instance != null)
+        {
+            GameObject.Destroy(this);
+        }
+        else
+        {
+            instance = this;
+            Object.DontDestroyOnLoad(this);
+        }
+
+        EventEmitter = this.GetComponent<StudioEventEmitter>();
+    }
+
+    public void EnterScene()
+    {
+        EventEmitter.SetParameter("EnterGame",1);
+        EventEmitter.SetParameter("Health",7);
     }
 
     public void PlayInWorld(Vector3 position, SimpleAudioEvent simpleAudioEvent)
