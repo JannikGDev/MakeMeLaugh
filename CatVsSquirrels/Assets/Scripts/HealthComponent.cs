@@ -5,6 +5,7 @@ using UnityEngine;
 public class HealthComponent : MonoBehaviour
 {
     public int health = 14;
+    public int healthLimit = 13;
 
     public delegate void OnDoDamage(int newHealth);
     public event OnDoDamage onDoDamage;
