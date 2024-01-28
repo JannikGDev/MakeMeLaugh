@@ -402,7 +402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nutProjectile: {fileID: 3012586009761888380, guid: c3cb24bdbeaa04048a4afe4dc017afcc, type: 3}
   ThrowStrength: 20
-  attackSFX: {fileID: 11400000, guid: daa77ac6dd21df44594f2fedfcc5e1c5, type: 2}
+  attackSFX: {fileID: 11400000, guid: 8bae5bd6ac54e4443b2839aa1f3b05a0, type: 2}
 --- !u!1 &6897218299494825406
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,9 +685,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65d30bd2a2d9f6845a8e606111739667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_biteSFX: {fileID: 11400000, guid: e2efee7135029db4e9ee5945e34e96d7, type: 2}
   m_animator: {fileID: 879674608008738654}
-  m_attackDelay: 2
-  m_attackRadius: 2
+  m_attackDelay: 1
+  m_attackRadius: 3
   m_lastAttackTime: 0
 --- !u!1 &8573470944200235076
 GameObject:

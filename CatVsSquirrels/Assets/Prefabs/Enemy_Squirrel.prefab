@@ -685,6 +685,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65d30bd2a2d9f6845a8e606111739667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_biteSFX: {fileID: 11400000, guid: c5d30fa7ef6e4b84b8528c53abc9f9c2, type: 2}
+  m_animator: {fileID: 5283116458609834133}
+  m_attackDelay: 1
+  m_attackRadius: 2
+  m_lastAttackTime: 0
 --- !u!1 &8573470944200235076
 GameObject:
   m_ObjectHideFlags: 0

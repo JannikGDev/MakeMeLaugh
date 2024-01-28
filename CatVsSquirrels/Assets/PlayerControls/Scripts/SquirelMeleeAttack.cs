@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SquirelMeleeAttack : MonoBehaviour
 {
+    public SimpleAudioEvent m_biteSFX;
     public Animator m_animator;
     public float m_attackDelay = 2.0f;
     public float m_attackRadius = 1;
@@ -21,8 +22,11 @@ public class SquirelMeleeAttack : MonoBehaviour
     {
         if(m_lastAttackTime + m_attackDelay > Time.time) return;
 
+        if(!IsPlayerInRadius()) return;
+
         m_lastAttackTime = Time.time;
 
+        AudioManager.instance.PlayInWorld(transform.position, m_biteSFX);
         m_animator.SetTrigger("melee_attack");
 
         Player.instance.GetComponent<HealthComponent>().TakeDamage(1);

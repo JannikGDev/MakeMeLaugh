@@ -212,7 +212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 14
-  m_damageStatPrefab: {fileID: 0}
+  m_damageStatPrefab: {fileID: 5599693436372671345, guid: c46018a9ecc7a4f4d94c715264218f91, type: 3}
 --- !u!114 &2073746945310267403
 MonoBehaviour:
   m_ObjectHideFlags: 0

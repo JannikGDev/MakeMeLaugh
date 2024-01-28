@@ -17,7 +17,7 @@ public class AI_Input : IInput
 
     private bool wanderLeft = false;
 
-    private const float ThrowDelay = 2f;
+    private const float ThrowDelay = 4f;
     private float throwCooldown = ThrowDelay;
 
     private void Start()
