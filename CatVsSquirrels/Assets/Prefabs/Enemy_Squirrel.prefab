@@ -262,7 +262,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 8407950ec92c71442aeab500cfd8ee66, type: 3}
-  m_Color: {r: 1, g: 0.41616273, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.41616273, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -393,7 +393,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 8407950ec92c71442aeab500cfd8ee66, type: 3}
-  m_Color: {r: 1, g: 0.41616273, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.41616273, b: 0, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -633,6 +633,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2251134968659242185}
   - component: {fileID: 9050976228166450660}
+  - component: {fileID: 5499543461767508836}
   m_Layer: 7
   m_Name: Attack
   m_TagString: Untagged
@@ -672,6 +673,18 @@ MonoBehaviour:
   Movement: {fileID: 8573470944200235076}
   input: {fileID: 8979626381608849655}
   force: 10
+--- !u!114 &5499543461767508836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7432578085449886018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65d30bd2a2d9f6845a8e606111739667, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8573470944200235076
 GameObject:
   m_ObjectHideFlags: 0
