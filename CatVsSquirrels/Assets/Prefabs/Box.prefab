@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 7124165968840080545}
   - component: {fileID: 1391968058520563259}
   - component: {fileID: 2386356055434034758}
+  - component: {fileID: 885863536362390621}
+  - component: {fileID: 2588653480836132924}
   m_Layer: 9
   m_Name: Box
   m_TagString: Untagged
@@ -173,6 +175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
+  m_damageStatPrefab: {fileID: 5599693436372671345, guid: c46018a9ecc7a4f4d94c715264218f91, type: 3}
 --- !u!114 &2386356055434034758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,3 +190,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_VFXPrefab: {fileID: 986870931829175978, guid: ce8d2c6f322eb9e4c8c6fecaa9d47e79, type: 3}
   m_SFX: {fileID: 11400000, guid: ae848e6be77d1a04d8f2b54409a58b28, type: 2}
+--- !u!114 &885863536362390621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866368373838439398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e599228497b1b8c45bac21951d6fbcba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
+  radius: 3
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!114 &2588653480836132924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866368373838439398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0df5e91a41db3d48a58733578892995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dieSFX: {fileID: 0}
