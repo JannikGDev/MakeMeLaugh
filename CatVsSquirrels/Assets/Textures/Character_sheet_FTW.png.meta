@@ -748,12 +748,12 @@ TextureImporter:
       name: box
       rect:
         serializedVersion: 2
-        x: 128
-        y: 96
+        x: 224
+        y: 0
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -774,7 +774,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -782,6 +782,27 @@ TextureImporter:
       bones: []
       spriteID: 9856fd24557d40b41aa04eda03e9a122
       internalID: 2081419453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: white nut
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 33
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a042a55e94a6045a41d44e91e4137e
+      internalID: 1646253126
       vertices: []
       indices: 
       edges: []
@@ -828,6 +849,7 @@ TextureImporter:
       box: -1626856777
       fishgranade: 2081419453
       gun: -1027896546
+      white nut: 1646253126
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

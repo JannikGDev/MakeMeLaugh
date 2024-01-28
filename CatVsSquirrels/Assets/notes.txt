@@ -1,10 +1,8 @@
-nut explotion
 Super Squirel
-Mouse aim
+
+*mouse aim
+
 blinking on take damage
 Player damage
 
 Squirel ragdoll
-Big squirel!
-More hearts!
-FMod

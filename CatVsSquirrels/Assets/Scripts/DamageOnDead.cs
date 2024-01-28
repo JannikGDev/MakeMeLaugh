@@ -20,24 +20,29 @@ public class DamageOnDead : MonoBehaviour
 
     void OnDie()
     {
-        ContactFilter2D filter = new ContactFilter2D();
-        filter.layerMask = layerMask;
-
-        List<RaycastHit2D> hits = new List<RaycastHit2D>(20);
-        Physics2D.CircleCast(transform.position, radius, transform.forward, filter, hits, 0);
-
-        foreach (var raycastHit2D in hits)
-        {
-            var healthComponent = raycastHit2D.collider.GetComponent<HealthComponent>();
-
-            if(healthComponent == null) continue;
-
-            healthComponent.TakeDamage(damage);
-        }
+        DamageInRadius(layerMask, transform.position, radius, damage);
     }
 
     void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(transform.position, radius);
+    }
+
+    public static void DamageInRadius(LayerMask layerMask, Vector3 position, float radius, int damage)
+    {
+        ContactFilter2D filter = new ContactFilter2D();
+        filter.layerMask = layerMask;
+
+        List<RaycastHit2D> hits = new List<RaycastHit2D>(20);
+        Physics2D.CircleCast(position, radius, Vector3.forward, filter, hits, 0);
+
+        foreach (var raycastHit2D in hits)
+        {
+            var healthComponent = raycastHit2D.collider.GetComponent<HealthComponent>();
+
+            if (healthComponent == null) continue;
+
+            healthComponent.TakeDamage(damage);
+        }
     }
 }
