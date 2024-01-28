@@ -11,6 +11,7 @@ public class Input_Player : IInput
         jumpInput = Input.GetButtonDown("Jump");
         attackInput = Input.GetButtonDown("Fire1");
         testInput = Input.GetButtonDown("Submit");
+        pauseInput = Input.GetButtonDown("Cancel");
     }
     
 }

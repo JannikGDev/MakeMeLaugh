@@ -8,5 +8,6 @@ namespace PlayerControls.Scripts
         public bool jumpInput { get; set; }
         public bool attackInput { get; set; }
         public bool testInput { get; set; }
+        public bool pauseInput { get; set; }
     }
 }
