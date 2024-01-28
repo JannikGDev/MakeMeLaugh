@@ -27,6 +27,21 @@ public class Machinegun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        var mousePos = Input.mousePosition;
+        var mouseWorldPos = Camera.main.ScreenToWorldPoint(mousePos);
+
+        var diffVector =  mouseWorldPos - this.gameObject.transform.position;
+        var diffVector2 = new Vector2(diffVector.x, diffVector.y);
+        var targetAngle = Vector2.SignedAngle(diffVector2,Vector2.right);
+        
+        // Create a quaternion that represents the rotation
+        Quaternion rotationQuaternion = Quaternion.Euler(0, 0, -targetAngle);
+
+        // Rotate the original vector using the quaternion
+        Vector3 rotatedVector = rotationQuaternion * Vector3.right;
+        var parentAngle = Vector2.SignedAngle(transform.parent.TransformVector(Vector3.right), Vector3.right);
+        var angle = rotationQuaternion.eulerAngles.z - parentAngle;
+        this.transform.rotation = Quaternion.Euler(0,0,angle);
         UpdateInput();
     }
 
