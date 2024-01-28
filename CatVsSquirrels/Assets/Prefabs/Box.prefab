@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6637179735760792955}
   - component: {fileID: 3402821831981818185}
   - component: {fileID: 7124165968840080545}
+  - component: {fileID: 1391968058520563259}
+  - component: {fileID: 2386356055434034758}
   m_Layer: 9
   m_Name: Box
   m_TagString: Untagged
@@ -158,3 +160,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
+--- !u!114 &1391968058520563259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866368373838439398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc72c6d5f87b0074dac1527718415dfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+--- !u!114 &2386356055434034758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866368373838439398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f73187d37640e64fb63a38a738b1760, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_VFXPrefab: {fileID: 986870931829175978, guid: ce8d2c6f322eb9e4c8c6fecaa9d47e79, type: 3}
+  m_SFX: {fileID: 0}
