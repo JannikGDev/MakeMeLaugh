@@ -10,6 +10,8 @@ public class HeartManager : MonoBehaviour
     [SerializeField] private HeartSprites [] hearts;
     [SerializeField] private GameObject restartButton;
 
+    private int lastHealth = 14;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,25 +26,34 @@ public class HeartManager : MonoBehaviour
         healthComponent.onDoDamage -= OnTakeDamage;
     }
 
-    // Update is called once per frame
-    void OnTakeDamage(int newLife)
+    public void OnAddHealth(int i)
     {
-        int index = newLife / 2;
-        int heartvalue = newLife % 2;
-        
-        // Takes the heartvalue, which can be half or full
-        switch (heartvalue)
+        OnTakeDamage(healthComponent.health + i);
+    }
+    // Update is called once per frame
+    public void OnTakeDamage(int newLife)
+    {
+        for (int i = 0; i < hearts.Length; i++)
         {
-            case 1: 
-                hearts[index].showHalfHeart();
-                Debug.Log("Should show half heart");
-                break;
-            case 0:
-                hearts[index].showEmptyHeart();
-                Debug.Log("Should show empty heart");
-                break;
+            var heartValue = Mathf.Clamp(newLife - (i * 2),0,2);
+            
+            switch (heartValue)
+            {
+                case 2: 
+                    hearts[i].showFullHeart();
+                    //Debug.Log("Should show full heart");
+                    break;
+                case 1: 
+                    hearts[i].showHalfHeart();
+                    //Debug.Log("Should show half heart");
+                    break;
+                case 0:
+                    hearts[i].showEmptyHeart();
+                    //Debug.Log("Should show empty heart");
+                    break;
+            }
         }
-        
+
         // Game Over
         if (newLife == 0)
         {
