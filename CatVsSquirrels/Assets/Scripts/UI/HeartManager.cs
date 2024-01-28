@@ -53,6 +53,8 @@ public class HeartManager : MonoBehaviour
                     break;
             }
         }
+        
+        AudioManager.instance.SetHealth(newLife);
 
         // Game Over
         if (newLife == 0)

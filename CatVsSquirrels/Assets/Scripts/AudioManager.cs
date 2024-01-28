@@ -35,6 +35,11 @@ public class AudioManager : MonoBehaviour
         EventEmitter.SetParameter("EnterGame",1);
         EventEmitter.SetParameter("Health",7);
     }
+
+    public void SetHealth(int value)
+    {
+        EventEmitter.SetParameter("Health",value/2);
+    }
     
     public void SetIntensity(float value)
     {
