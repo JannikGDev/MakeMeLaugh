@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   increaseHealth: 2
+  sfx: {fileID: 11400000, guid: ea1a01ad8463f9840a9bed68b504cfbc, type: 2}
 --- !u!61 &904851896455722263
 BoxCollider2D:
   m_ObjectHideFlags: 0
