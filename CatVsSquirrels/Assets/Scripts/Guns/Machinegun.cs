@@ -46,18 +46,25 @@ public class Machinegun : MonoBehaviour
         // The angle in degrees by which you want to rotate the vector
         //float rotationAngleDegrees = 45.0f;
 
-        var rotationAngleDegrees = Random.value * m_spread;
+        var mousePos = Input.mousePosition;
+        var mouseWorldPos = Camera.main.ScreenToWorldPoint(mousePos);
+
+        var diffVector =  mouseWorldPos - this.gameObject.transform.position;
+        var diffVector2 = new Vector2(diffVector.x, diffVector.y);
+        var targetAngle = Vector2.SignedAngle(diffVector2,Vector2.right);
+        
+        var rotationAngleDegrees = -targetAngle + Random.value * m_spread;
 
         rotationAngleDegrees -= m_spread / 2f;
-
-        // Convert the rotation angle from degrees to radians
-        float rotationAngleRadians = rotationAngleDegrees * Mathf.Deg2Rad;
 
         // Create a quaternion that represents the rotation
         Quaternion rotationQuaternion = Quaternion.Euler(0, 0, rotationAngleDegrees);
 
         // Rotate the original vector using the quaternion
-        Vector3 rotatedVector = rotationQuaternion * transform.parent.TransformVector(Vector3.right);
+        Vector3 rotatedVector = rotationQuaternion * Vector3.right;
+        var parentAngle = Vector2.SignedAngle(transform.parent.TransformVector(Vector3.right), Vector3.right);
+        var angle = rotationQuaternion.eulerAngles.z - parentAngle;
+        this.transform.rotation = Quaternion.Euler(0,0,angle);
 
         GameObject newProjectile = Instantiate(m_projectilePrefab, m_shotPos.position, Quaternion.identity);
         var aProjectile = newProjectile.GetComponent<AProjectile>();

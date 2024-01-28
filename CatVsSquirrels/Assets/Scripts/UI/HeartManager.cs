@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HeartManager : MonoBehaviour
@@ -8,7 +10,8 @@ public class HeartManager : MonoBehaviour
     public static HeartManager Instance;
     [SerializeField] private HealthComponent healthComponent;
     [SerializeField] private HeartSprites [] hearts;
-    [SerializeField] private GameObject restartButton;
+    [SerializeField] private float gameOverDelay = 1.0f;
+    [SerializeField] private GameObject gameOverText;
 
     private int lastHealth = 14;
 
@@ -58,16 +61,15 @@ public class HeartManager : MonoBehaviour
 
         // Game Over
         if (newLife == 0)
-        {
-            GameOver();
+        {        
+            gameOverText.SetActive(true);
+            Time.timeScale = 0.25f;
+            Invoke("GameOver", gameOverDelay);
         }
     }
 
     public void GameOver()
     {
-        //TODO: Add GameOver Screen
-        restartButton.SetActive(true);
-        Time.timeScale = 0.25f;
-        Debug.Log("Game over!");
+        SceneManager.LoadScene("GameOver");
     }
 }
