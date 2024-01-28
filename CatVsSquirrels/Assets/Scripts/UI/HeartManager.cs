@@ -54,7 +54,7 @@ public class HeartManager : MonoBehaviour
     {
         //TODO: Add GameOver Screen
         restartButton.SetActive(true);
-        Time.timeScale = 0;
+        Time.timeScale = 0.25f;
         Debug.Log("Game over!");
     }
 }
