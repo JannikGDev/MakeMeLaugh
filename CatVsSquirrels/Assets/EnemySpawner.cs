@@ -68,10 +68,13 @@ public class EnemySpawner : MonoBehaviour
         enemy.transform.position = spawnPositions[chosen];
         Enemies.Add(enemy);
         enemy.GetComponent<HealthComponent>().onDead += () => RemoveEnemy(enemy);
+        
+        AudioManager.instance.SetIntensity((float)Enemies.Count / MaxEnemyCount);
     }
 
     private void RemoveEnemy(GameObject enemy)
     {
         this.Enemies.Remove(enemy);
+        AudioManager.instance.SetIntensity((float)Enemies.Count / MaxEnemyCount);
     }
 }
