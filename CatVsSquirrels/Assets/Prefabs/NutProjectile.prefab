@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 4451980073753700852}
   - component: {fileID: 459531699840331339}
   - component: {fileID: 4718639571805081942}
+  - component: {fileID: 5862818942307616802}
+  - component: {fileID: 6188732014883065237}
   m_Layer: 8
   m_Name: NutProjectile
   m_TagString: Untagged
@@ -289,3 +291,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19a384731d7d5964fb6432f695ee7e29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5862818942307616802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3012586009761888380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc66ed0b90e5041ea92206a043338ca1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyOnPlayerHit: 1
+--- !u!114 &6188732014883065237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3012586009761888380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27f460312bc7b427abde04339fc3be2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTag: Player
+  destroyOnPlayerHit: 1

@@ -94,7 +94,7 @@ MonoBehaviour:
   sprite: {fileID: 2256055618815761986}
   moveright: 1
   velocityLimit: 10
-  movementSensibility: 20
+  movementSensibility: 50
 --- !u!1 &1823022785717608463
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 5374677860789870239}
   - component: {fileID: 8706241743752368642}
   - component: {fileID: 8641429832334471966}
-  - component: {fileID: 1647770641830861662}
+  - component: {fileID: 1337473754677375506}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -198,7 +198,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1647770641830861662
+--- !u!114 &1337473754677375506
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -416,9 +416,9 @@ TrailRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1196348521
-  m_SortingLayer: 2
-  m_SortingOrder: -1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: -2
   m_Time: 1
   m_PreviewTimeScale: 1
   m_Parameters:
@@ -538,7 +538,7 @@ MonoBehaviour:
   isGrounded: 0
   layerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1664
 --- !u!61 &7968904078058053661
 BoxCollider2D:
   m_ObjectHideFlags: 0
