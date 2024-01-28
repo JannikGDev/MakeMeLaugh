@@ -10947,6 +10947,11 @@ Sprite:
   m_PhysicsShape: []
   m_Bones: []
   m_SpriteID: 
+--- !u!1 &1063919564 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2687195584236605703, guid: 427e4f9dff2ae42c596390dc197b7ac4, type: 3}
+  m_PrefabInstance: {fileID: 2038235733}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1089178558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11238,6 +11243,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5196626009109491799, guid: 427e4f9dff2ae42c596390dc197b7ac4, type: 3}
+      propertyPath: gameOverText
+      value: 
+      objectReference: {fileID: 1063919564}
     - target: {fileID: 5196626009109491799, guid: 427e4f9dff2ae42c596390dc197b7ac4, type: 3}
       propertyPath: healthComponent
       value: 
