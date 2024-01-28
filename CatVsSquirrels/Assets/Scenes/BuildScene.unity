@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -960,18 +960,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 2015061231705105929, guid: f99485da6e64941e1a6051132de5489e, type: 3}
-      propertyPath: m_SortingLayer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2015061231705105929, guid: f99485da6e64941e1a6051132de5489e, type: 3}
-      propertyPath: m_SortingOrder
-      value: -2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2015061231705105929, guid: f99485da6e64941e1a6051132de5489e, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5374677860789870239, guid: f99485da6e64941e1a6051132de5489e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.2
@@ -1011,10 +999,6 @@ PrefabInstance:
     - target: {fileID: 5374677860789870239, guid: f99485da6e64941e1a6051132de5489e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8416251417513188098, guid: f99485da6e64941e1a6051132de5489e, type: 3}
-      propertyPath: layerMask.m_Bits
-      value: 1664
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1083,12 +1067,41 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 394336e29fdf33b4397c437a39b1627e, type: 3}
+--- !u!1 &1783795836 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1029286954100125238, guid: 427e4f9dff2ae42c596390dc197b7ac4, type: 3}
+  m_PrefabInstance: {fileID: 2038235733}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1783795838 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1562760216250769969, guid: 427e4f9dff2ae42c596390dc197b7ac4, type: 3}
+  m_PrefabInstance: {fileID: 2038235733}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783795836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1783795840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783795836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc34d9f488a7347c184fa8e39dd07d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 1783795838}
 --- !u!4 &1812991068 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5374677860789870239, guid: f99485da6e64941e1a6051132de5489e, type: 3}
   m_PrefabInstance: {fileID: 1089178558}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1828973906 stripped
+--- !u!114 &1812991072 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1337473754677375506, guid: f99485da6e64941e1a6051132de5489e, type: 3}
   m_PrefabInstance: {fileID: 1089178558}
@@ -1258,7 +1271,7 @@ PrefabInstance:
     - target: {fileID: 5196626009109491799, guid: 427e4f9dff2ae42c596390dc197b7ac4, type: 3}
       propertyPath: healthComponent
       value: 
-      objectReference: {fileID: 1828973906}
+      objectReference: {fileID: 1812991072}
     - target: {fileID: 6875548519247397737, guid: 427e4f9dff2ae42c596390dc197b7ac4, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1310,7 +1323,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1029286954100125238, guid: 427e4f9dff2ae42c596390dc197b7ac4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1783795840}
   m_SourcePrefab: {fileID: 100100000, guid: 427e4f9dff2ae42c596390dc197b7ac4, type: 3}
 --- !u!1001 &1279454477426730325
 PrefabInstance:
@@ -1320,42 +1336,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -6414559070610559204, guid: 028511f4705fb8f4582939cc311565ee, type: 3}
-      propertyPath: PlayEvent
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: -6414559070610559204, guid: 028511f4705fb8f4582939cc311565ee, type: 3}
-      propertyPath: StopEvent
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: -6414559070610559204, guid: 028511f4705fb8f4582939cc311565ee, type: 3}
-      propertyPath: EventReference.Path
-      value: event:/MUSIC/Music
-      objectReference: {fileID: 0}
-    - target: {fileID: -6414559070610559204, guid: 028511f4705fb8f4582939cc311565ee, type: 3}
-      propertyPath: OverrideMaxDistance
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: -6414559070610559204, guid: 028511f4705fb8f4582939cc311565ee, type: 3}
-      propertyPath: OverrideMinDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -6414559070610559204, guid: 028511f4705fb8f4582939cc311565ee, type: 3}
-      propertyPath: EventReference.Guid.Data1
-      value: 103892100
-      objectReference: {fileID: 0}
-    - target: {fileID: -6414559070610559204, guid: 028511f4705fb8f4582939cc311565ee, type: 3}
-      propertyPath: EventReference.Guid.Data2
-      value: 1131531572
-      objectReference: {fileID: 0}
-    - target: {fileID: -6414559070610559204, guid: 028511f4705fb8f4582939cc311565ee, type: 3}
-      propertyPath: EventReference.Guid.Data3
-      value: 2143868330
-      objectReference: {fileID: 0}
-    - target: {fileID: -6414559070610559204, guid: 028511f4705fb8f4582939cc311565ee, type: 3}
-      propertyPath: EventReference.Guid.Data4
-      value: -1613621673
-      objectReference: {fileID: 0}
     - target: {fileID: 3103829231925128956, guid: 028511f4705fb8f4582939cc311565ee, type: 3}
       propertyPath: m_ClearFlags
       value: 2
@@ -1408,8 +1388,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: -6414559070610559204, guid: 028511f4705fb8f4582939cc311565ee, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
