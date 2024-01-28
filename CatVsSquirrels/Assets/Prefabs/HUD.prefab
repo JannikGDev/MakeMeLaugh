@@ -906,6 +906,7 @@ MonoBehaviour:
   healthComponent: {fileID: 0}
   hearts: []
   gameOverDelay: 1
+  gameOverText: {fileID: 2687195584236605703}
 --- !u!114 &6973490844836382566 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8865482764653156441, guid: 5c854643db6f73646a8c273847dbc9ce, type: 3}
