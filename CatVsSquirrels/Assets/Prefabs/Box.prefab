@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2386356055434034758}
   - component: {fileID: 885863536362390621}
   - component: {fileID: 2588653480836132924}
+  - component: {fileID: 2248182139605278636}
   m_Layer: 9
   m_Name: Box
   m_TagString: Untagged
@@ -175,6 +176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
+  healthLimit: 13
   m_damageStatPrefab: {fileID: 5599693436372671345, guid: c46018a9ecc7a4f4d94c715264218f91, type: 3}
 --- !u!114 &2386356055434034758
 MonoBehaviour:
@@ -220,3 +222,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dieSFX: {fileID: 0}
+--- !u!114 &2248182139605278636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866368373838439398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deaa1e2ec6a946a4ebfc31326cfcdc6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageMul: 2
+  doDamageForceThreshold: 12
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 1024
